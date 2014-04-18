@@ -1,0 +1,1 @@
+/api/v1/articles method=POST contents='{"article": {"title":"The title", "body":"the body"}}'

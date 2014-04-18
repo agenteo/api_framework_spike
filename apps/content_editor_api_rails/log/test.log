@@ -1,0 +1,580 @@
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2680ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.3040ms
+Started POST "/api/v1/article" for 127.0.0.1 at 2014-04-17 13:19:40 -0400
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1930ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2250ms
+Started POST "/api/v1/article" for 127.0.0.1 at 2014-04-17 13:20:09 -0400
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1850ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2500ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:20:23 -0400
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2960ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2210ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:21:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Test 1"}}
+Completed 500 Internal Server Error in 0ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2210ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2190ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:21:46 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Test 1"}}
+Completed 500 Internal Server Error in 0ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2880ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2730ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:22:34 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Test 1"}}
+Completed 500 Internal Server Error in 166391ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2800ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2480ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:25:23 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Test 1"}}
+Completed 400 Bad Request in 6ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2820ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:27:41 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1440ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53500f0d4e592d2585000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 172.6310ms
+Completed 200 OK in 188ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.3280ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:27:41 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53500f0d4e592d2585010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3100ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2070ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:30:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0880ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53500fac4e592d263d000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3300ms
+Completed 200 OK in 15ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3320ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2750ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2360ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 13:30:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53500fac4e592d263d010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2970ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2160ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2500ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2550ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:04:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3030ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535017904e592d2ba3000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3280ms
+Completed 200 OK in 16ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3450ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2570ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2400ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:04:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535017904e592d2ba3010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2730ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2760ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2640ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:05:56 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1780ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018044e592d2c06000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3120ms
+Completed 200 OK in 16ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3010ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2670ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2190ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:05:56 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018044e592d2c06010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2730ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2530ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2650ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2410ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2250ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:05:56 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018044e592d2c06020000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2620ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2080ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2480ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2420ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2490ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2240ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018184e592d2c37000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.4130ms
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2910ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2590ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>"Something about weddings"}
+Completed 500 Internal Server Error in 0ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2650ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2260ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2100ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018184e592d2c37010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2660ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2490ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2420ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018184e592d2c37020000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2710ms
+Completed 200 OK in 1ms (Views: 0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2450ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2440ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2330ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2220ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:49 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018394e592d2c43000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.4160ms
+Completed 200 OK in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2940ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2800ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:49 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3250ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2490ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2270ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:49 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018394e592d2c43010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2640ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2570ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2660ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:06:49 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018394e592d2c43020000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2750ms
+Completed 200 OK in 1ms (Views: 0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2450ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2410ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1910ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2670ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:07:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018584e592d2c7d000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.4090ms
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3050ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2950ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:07:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3360ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2630ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2650ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:07:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018584e592d2c7d010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2790ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2520ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2570ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:07:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535018584e592d2c7d020000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3590ms
+Completed 200 OK in 1ms (Views: 0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2490ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2840ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9390ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2450ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:10:59 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535019334e592d2d5f000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3900ms
+Completed 200 OK in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3490ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2630ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1830ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2400ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:11:17 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535019454e592d2d90000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.4130ms
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2800ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2540ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0070ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2220ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:12:11 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('5350197f4e592d2df3000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.5450ms
+Completed 200 OK in 12845ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.4550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4320ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.4130ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1820ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2250ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:12:40 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1217ms (Views: 0.3ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.4240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3960ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3700ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:12:53 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9620ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535019a54e592d2e1b000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3240ms
+Completed 200 OK in 15ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3070ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2650ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2400ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:12:53 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535019a54e592d2e1b010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2730ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1920ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2900ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2480ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:12:53 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3270ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2510ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1870ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:12:53 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2220ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2870ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2350ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0570ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2460ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:14 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 6ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.3520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3230ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2900ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1110ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501a704e592d2f12000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3240ms
+Completed 200 OK in 16ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3150ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2710ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2470ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501a704e592d2f12010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2550ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2810ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2660ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3230ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2500ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2780ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2520ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2570ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:16 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2880ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2630ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:43 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1360ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501a8b4e592d2f27000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3380ms
+Completed 200 OK in 16ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3300ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2650ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2710ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:43 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501a8b4e592d2f27010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2450ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2280ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2470ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2560ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2230ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:43 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2590ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2410ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:43 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2780ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2340ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:16:43 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2610ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2450ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:17:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2050ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501a9c4e592d2f5b000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3120ms
+Completed 200 OK in 16ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2820ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2980ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2020ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:17:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501a9c4e592d2f5b010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2750ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2490ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2440ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2700ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1980ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:17:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3330ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2730ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:17:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2810ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2750ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:17:00 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2910ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2340ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:17:15 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 17ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2410ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4520ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.4200ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:17:47 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 17ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1490ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3000ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2710ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:18:02 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 134231ms (Views: 0.5ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2370ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4040ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3740ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1000ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2210ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:20:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 6ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.3350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2870ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2700ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:20:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2850ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2400ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:20:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2830ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2390ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2100ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:20:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501b644e592d3045000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2940ms
+Completed 200 OK in 1ms (Views: 0.0ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2640ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2380ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-17 14:20:20 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('53501b644e592d3045010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2740ms
+Completed 200 OK in 1ms (Views: 0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2430ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2390ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-18 09:26:57 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1790ms
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535128214e592d5e60000000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.3120ms
+Completed 200 OK in 15ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2850ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2810ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2350ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-18 09:26:57 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"Something about weddings", "body"=>"Here it starts..."}}
+  MOPED: 127.0.0.1:27017 INSERT       database=content_editor_api_rails_test collection=articles documents=[{"_id"=>BSON::ObjectId('535128214e592d5e60010000'), "title"=>"Something about weddings", "body"=>"Here it starts..."}] flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2500ms
+Completed 200 OK in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2780ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2490ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-18 09:26:57 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3340ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2780ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-18 09:26:57 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2620ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2380ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.2050ms
+Started POST "/api/v1/articles" for 127.0.0.1 at 2014-04-18 09:26:57 -0400
+Processing by Api::V1::ArticlesController#create as HTML
+  Parameters: {"article"=>{"title"=>"", "body"=>"Here it starts..."}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=content_editor_api_rails_test command={:count=>"articles", :query=>{}} runtime: 0.1960ms
+  MOPED: 127.0.0.1:27017 QUERY        database=content_editor_api_rails_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2570ms
+  MOPED: 127.0.0.1:27017 DELETE       database=content_editor_api_rails_test collection=articles selector={} flags=[]
+                         COMMAND      database=content_editor_api_rails_test command={:getlasterror=>1, :w=>1} runtime: 0.2380ms

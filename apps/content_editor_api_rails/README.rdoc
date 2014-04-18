@@ -1,0 +1,3 @@
+== Simple API to benchmark rails vs rails-api
+
+Application using rails.
