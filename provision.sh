@@ -17,6 +17,8 @@ gem install bundler
 sudo apt-get install -y tmux
 sudo apt-get install -y vim
 sudo apt-get install -y git
+sudo apt-get install -y apache2-utils
+sudo apt-get install -y httperf
 
 ln -s /vagrant/apps ~/apps
 cd apps/content_editor_api_rails
