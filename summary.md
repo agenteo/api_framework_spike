@@ -20,30 +20,43 @@ watch 'clear && ps up PID'
 
 ## rails-api memory footprint
 ### initial
+```
 vagrant  16378  0.0 10.3  51200 39300 pts/0    Sl+  21:02   0:00 unicorn worker[0] -p 3001 -c config/unicorn.rb -E production
+```
 ### final
+```
 vagrant  16378 15.2 10.8  51848 40908 pts/0    Sl+  21:02   0:16 unicorn worker[0] -p 3001 -c config/unicorn.rb -E production
+```
 
 ## rails memory footprint
 ### initial
+```
 vagrant  16700  0.0 12.8  61100 48676 pts/0    Sl+  21:05   0:00 unicorn worker[0] -p 3000 -c config/unicorn.rb -E production
+```
 ### final
+```
 vagrant  16700 12.3 14.3  65612 54212 pts/0    Sl+  21:05   0:16 unicorn worker[0] -p 3000 -c config/unicorn.rb -E production
+```
 
-### sinatra memory footprint
+## sinatra memory footprint
 ### initial
+```
 vagrant  17417  2.4  7.2  35940 27564 pts/0    Sl+  21:11   0:00 unicorn worker[0] -p 3002 -c config/unicorn.rb
+```
 ### final
+```
 vagrant  17417 15.5  7.8  39988 29548 pts/0    Sl+  21:11   0:15 unicorn worker[0] -p 3002 -c config/unicorn.rb
+```
 
 
 [1]
 ## AB load test
 
-### Using rails 1K req -c 4
-ab -n 1000 -c 4 -p post_data -v 4 -T 'application/json' http://localhost:3000/api/v1/articles
-```
+### rails 1K req -c 4
+`ab -n 1000 -c 4 -p post_data -v 4 -T 'application/json' http://localhost:3000/api/v1/articles`
 
+
+```
 LOG: Response code = 200
 Completed 1000 requests
 Finished 1000 requests
@@ -91,8 +104,9 @@ Percentage of the requests served within a certain time (ms)
 ```
 
 
-### 1K rails-api POST of article persisted in mongodb (production):
-ab -n 1000 -c 4 -p post_data -v 4 -T 'application/json' http://localhost:3001/api/v1/articles
+### 1K rails-api POST of article persisted in mongodb:
+`ab -n 1000 -c 4 -p post_data -v 4 -T 'application/json' http://localhost:3001/api/v1/articles`
+
 ```
 LOG: Response code = 200
 Completed 1000 requests
@@ -141,7 +155,8 @@ Percentage of the requests served within a certain time (ms)
 ```
  
 ## 1K sinatra POST of article persisted in mongodb:
-ab -n 1000 -c 4 -p post_data -v 4 -T 'application/json' http://localhost:3002/api/v1/articles
+`ab -n 1000 -c 4 -p post_data -v 4 -T 'application/json' http://localhost:3002/api/v1/articles`
+
 ```
 Server Software:
 Server Hostname:        localhost
