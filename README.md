@@ -17,6 +17,7 @@ This is to increase clarity when looking at the benchmarks logs.
 ## Benchmarking rails
 
 to start the rails app:
+
 ```
 cd /vagrant/apps/content_editor_api_rails
 bundle
@@ -32,6 +33,7 @@ ab -n 1000 -c 4 http://localhost:3000/api/v1/articles/22
 from the same directory:
 ```
 ab -n 1000 -c 4 -p post_data -v 4 -T 'application/json' http://localhost:3000/api/v1/articles
+```
 
 
 ## Benchmarking rails-api
